@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi — Laden POS</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.7; max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #161616; } }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
+  .tgl { color: #666; font-size: .95rem; margin-top: 0; }
+  @media (prefers-color-scheme: dark) { .tgl { color: #aaa; } }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #ccc; padding: .55rem .7rem; text-align: left; vertical-align: top; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #444; } }
+  th { background: rgba(127,127,127,.12); }
+  .kotak { border-left: 4px solid #2563eb; background: rgba(37,99,235,.08);
+           padding: .9rem 1rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0; }
+  a { color: #2563eb; }
+  @media (prefers-color-scheme: dark) { a { color: #7aa7ff; } }
+</style>
+</head>
+<body>
+
+<h1>Kebijakan Privasi Laden POS</h1>
+<p class="tgl">Berlaku sejak 30 September 2026</p>
+
+<p>
+  Laden POS adalah aplikasi kasir dan pencatatan penjualan untuk usaha mikro, kecil,
+  dan menengah. Halaman ini menjelaskan data apa yang kami simpan, untuk apa, dan
+  bagaimana Anda menghapusnya.
+</p>
+
+<h2>Data yang kami kumpulkan</h2>
+
+<table>
+  <tr><th>Jenis</th><th>Isinya</th><th>Kenapa dibutuhkan</th></tr>
+  <tr>
+    <td>Akun pengguna</td>
+    <td>Nama, email, nomor HP, PIN/kata sandi (disimpan teracak, tidak bisa dibaca balik), ID Google bila Anda memakai Masuk dengan Google</td>
+    <td>Agar Anda bisa masuk dan agar data toko Anda terpisah dari toko lain</td>
+  </tr>
+  <tr>
+    <td>Data toko</td>
+    <td>Nama toko, alamat, nomor telepon, pengaturan pajak dan struk</td>
+    <td>Ditampilkan pada struk dan laporan</td>
+  </tr>
+  <tr>
+    <td>Data operasional</td>
+    <td>Daftar produk, harga, foto produk, transaksi penjualan, pergerakan stok, jam kerja kasir</td>
+    <td>Fungsi inti aplikasi: mencatat penjualan dan menyusun laporan</td>
+  </tr>
+  <tr>
+    <td>Langganan</td>
+    <td>Status langganan dan tanda terima pembelian dari Google Play</td>
+    <td>Menentukan fitur mana yang aktif untuk akun Anda</td>
+  </tr>
+  <tr>
+    <td>Diagnostik</td>
+    <td>Laporan kesalahan otomatis: jenis perangkat, versi aplikasi, dan letak kesalahan pada kode</td>
+    <td>Menemukan dan memperbaiki kerusakan aplikasi</td>
+  </tr>
+</table>
+
+<div class="kotak">
+  <strong>Yang TIDAK kami kumpulkan.</strong> Laden POS tidak menyimpan data
+  pribadi pelanggan toko Anda — tidak ada nama, nomor telepon, maupun alamat
+  pembeli. Aplikasi juga tidak mengakses lokasi, daftar kontak, mikrofon, maupun
+  kamera perangkat Anda.
+</div>
+
+<h2>Izin perangkat yang diminta</h2>
+<ul>
+  <li><strong>Bluetooth</strong> — hanya untuk menyambung ke printer struk termal.
+      Tidak dipakai melacak lokasi.</li>
+  <li><strong>Internet</strong> — menyinkronkan data ke server.</li>
+</ul>
+
+<h2>Cara data disimpan dan diamankan</h2>
+<ul>
+  <li>Data disimpan di perangkat Anda dan di server kami (basis data PostgreSQL di Singapura).</li>
+  <li>Semua pengiriman data memakai sambungan terenkripsi (HTTPS/TLS).</li>
+  <li>Data tiap toko dipisahkan di lapisan basis data, sehingga satu toko tidak
+      dapat membaca data toko lain.</li>
+  <li>PIN dan kata sandi disimpan dalam bentuk teracak satu arah.</li>
+  <li>Aplikasi tetap berfungsi tanpa internet; data tersimpan di perangkat lalu
+      dikirim ke server saat sambungan tersedia.</li>
+</ul>
+
+<h2>Pihak ketiga</h2>
+<p>Kami memakai layanan berikut, masing-masing dengan kebijakan privasinya sendiri:</p>
+<ul>
+  <li><strong>Google Play Billing</strong> — memproses pembayaran langganan.
+      Kami tidak pernah menerima atau menyimpan nomor kartu Anda.</li>
+  <li><strong>Google Sign-In</strong> — pilihan masuk dengan akun Google.</li>
+  <li><strong>Sentry</strong> — menerima laporan kesalahan aplikasi.</li>
+</ul>
+<p>Kami tidak menjual data Anda dan tidak memakainya untuk iklan.</p>
+
+<h2>Berapa lama data disimpan</h2>
+<p>
+  Data disimpan selama akun Anda aktif. Setelah Anda menghapus akun, seluruh data
+  dihapus permanen dari basis data kami dan tidak dapat dipulihkan.
+</p>
+
+<h2>Hak Anda</h2>
+<ul>
+  <li>Melihat dan mengubah data toko lewat menu Pengaturan di aplikasi.</li>
+  <li>Menghapus akun beserta seluruh data kapan saja —
+      lihat <a href="hapus-akun.html">cara menghapus akun</a>.</li>
+  <li>Menarik persetujuan dengan berhenti memakai aplikasi dan menghapus akun.</li>
+</ul>
+
+<h2>Perubahan kebijakan</h2>
+<p>
+  Bila kebijakan ini berubah, kami memperbarui tanggal di atas dan memberi tahu
+  lewat aplikasi untuk perubahan yang penting.
+</p>
+
+<h2>Hubungi kami</h2>
+<p>
+  Pertanyaan tentang privasi atau permintaan penghapusan data:
+  <a href="mailto:wildhanfahmi11@gmail.com">wildhanfahmi11@gmail.com</a>
+</p>
+
+</body>
+</html>
